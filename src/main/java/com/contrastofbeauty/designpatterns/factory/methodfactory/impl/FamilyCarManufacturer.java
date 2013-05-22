@@ -3,7 +3,7 @@ package com.contrastofbeauty.designpatterns.factory.methodfactory.impl;
 import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
 import com.contrastofbeauty.designpatterns.factory.domain.ClassA;
 import com.contrastofbeauty.designpatterns.factory.domain.ClassB;
-import com.contrastofbeauty.designpatterns.factory.methodfactory.AbstractCarManufacturer;
+import com.contrastofbeauty.designpatterns.factory.domain.AbstractCarManufacturer;
 
 /**
  * A family car manufacturer.

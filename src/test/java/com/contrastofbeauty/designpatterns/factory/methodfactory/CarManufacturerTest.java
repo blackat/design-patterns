@@ -1,6 +1,7 @@
 package com.contrastofbeauty.designpatterns.factory.methodfactory;
 
 import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
+import com.contrastofbeauty.designpatterns.factory.domain.AbstractCarManufacturer;
 import com.contrastofbeauty.designpatterns.factory.methodfactory.impl.CarManufacturer;
 import com.contrastofbeauty.designpatterns.factory.methodfactory.impl.FamilyCarManufacturer;
 import com.contrastofbeauty.designpatterns.factory.methodfactory.impl.SportCarManufacturer;

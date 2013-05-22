@@ -1,4 +1,4 @@
-package com.contrastofbeauty.designpatterns.factory.methodfactory;
+package com.contrastofbeauty.designpatterns.factory.domain;
 
 import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
 import com.contrastofbeauty.designpatterns.factory.simplefactory.CarFactory;
