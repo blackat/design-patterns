@@ -1,23 +1,33 @@
-package com.contrastofbeauty.designpatterns.factory.simplefactory;
+package com.contrastofbeauty.designpatterns.factory.methodfactory;
 
 import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
+import com.contrastofbeauty.designpatterns.factory.simplefactory.CarFactory;
 import org.apache.commons.lang.Validate;
 
 /**
  * A car manufacturer.
+ *
  * @author Eugenio Lentini
  */
-public class CarManufacturer {
+public abstract class AbstractCarManufacturer {
     /**
      * The car factory.
      */
     private CarFactory carFactory;
 
     /**
+     * Default constructor.
+     */
+    public AbstractCarManufacturer() {
+
+    }
+
+    /**
      * Constructor.
+     *
      * @param factory factory object
      */
-    public CarManufacturer(CarFactory factory) {
+    public AbstractCarManufacturer(CarFactory factory) {
         this.carFactory = factory;
     }
 
@@ -33,4 +43,6 @@ public class CarManufacturer {
 
         return car;
     }
+
+    public abstract AbstractCar createCar(String model);
 }

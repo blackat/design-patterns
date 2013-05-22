@@ -5,7 +5,7 @@ package com.contrastofbeauty.designpatterns.factory.domain;
  *
  * @author Eugenio Lentini
  */
-public class ClassB extends Car {
+public class ClassB extends AbstractCar {
     @Override
     public void assemble() {
         setAssembled(true);

@@ -5,7 +5,7 @@ package com.contrastofbeauty.designpatterns.factory.domain;
  *
  * @author Eugenio Lentini
  */
-public abstract class Car {
+public abstract class AbstractCar {
 
     /**
      * True if the car has been assembled.
