@@ -43,11 +43,12 @@ public class CarManufacturerTest {
     }
 
     @Rule
-    public ExpectedException exception = ExpectedException.none();
+    public ExpectedException thrown = ExpectedException.none();
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testBuildCarNotExistingModel() throws Exception {
+        thrown.expect(IllegalArgumentException.class);
+        thrown.expectMessage("Model c-class is not available for the build.");
         AbstractCar car = carManufacturer.buildCar("c-class");
-        exception.expectMessage("Model c-class is not available for the build.");
     }
 }

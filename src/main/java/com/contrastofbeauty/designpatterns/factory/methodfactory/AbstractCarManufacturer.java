@@ -10,10 +10,6 @@ import org.apache.commons.lang.Validate;
  * @author Eugenio Lentini
  */
 public abstract class AbstractCarManufacturer {
-    /**
-     * The car factory.
-     */
-    private CarFactory carFactory;
 
     /**
      * Default constructor.
@@ -22,17 +18,8 @@ public abstract class AbstractCarManufacturer {
 
     }
 
-    /**
-     * Constructor.
-     *
-     * @param factory factory object
-     */
-    public AbstractCarManufacturer(CarFactory factory) {
-        this.carFactory = factory;
-    }
-
     public AbstractCar buildCar(String model) {
-        AbstractCar car = this.carFactory.createCarInstance(model);
+        AbstractCar car = createCar(model);
 
         Validate.notNull(car, "Model " + model + " is not available for the build.");
 
@@ -44,5 +31,5 @@ public abstract class AbstractCarManufacturer {
         return car;
     }
 
-    public abstract AbstractCar createCar(String model);
+    protected abstract AbstractCar createCar(String model);
 }
