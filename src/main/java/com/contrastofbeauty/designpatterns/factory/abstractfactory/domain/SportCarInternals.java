@@ -5,5 +5,5 @@ package com.contrastofbeauty.designpatterns.factory.abstractfactory.domain;
  *
  * @author Eugenio Lentini
  */
-public class SportCarInternals {
+public class SportCarInternals implements Internals {
 }

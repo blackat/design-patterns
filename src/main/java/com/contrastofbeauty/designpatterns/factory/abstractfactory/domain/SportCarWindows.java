@@ -5,5 +5,5 @@ package com.contrastofbeauty.designpatterns.factory.abstractfactory.domain;
  *
  * @author Eugenio Lentini
  */
-public class SportCarWindows {
+public class SportCarWindows implements Windows {
 }

@@ -5,5 +5,5 @@ package com.contrastofbeauty.designpatterns.factory.abstractfactory.domain;
  *
  * @author Eugenio Lentini
  */
-public class SportCarChassis {
+public class SportCarChassis implements Chassis {
 }

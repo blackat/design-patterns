@@ -23,7 +23,7 @@ public class FamilyCarManufacturer extends AbstractCarComponentsManufacturer {
         CarComponentsFactory carComponentsFactory = new FamilyCarComponentsFactory();
 
         if (model.equalsIgnoreCase(A_CLASS)) {
-            return new ClassAWithComponents(carComponentsFactory);
+            return new ClassSlkWithComponents(carComponentsFactory);
         } else if (model.equalsIgnoreCase(B_CLASS)) {
             return new ClassBWithComponents(carComponentsFactory);
         }
