@@ -48,6 +48,6 @@ public class ClassBWithComponents extends AbstractCarWithComponents {
         this.setFender(carComponentsFactory.createFender());
         this.setWheels(carComponentsFactory.createWheels());
         this.setInternals(carComponentsFactory.createInternals());
-        this.setWindow(carComponentsFactory.createWindow());
+        this.setWindow(carComponentsFactory.createWindows());
     }
 }

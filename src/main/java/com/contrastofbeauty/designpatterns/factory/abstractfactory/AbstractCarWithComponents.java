@@ -1,17 +1,48 @@
 package com.contrastofbeauty.designpatterns.factory.abstractfactory;
 
+import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Chassis;
+import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Doors;
+import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Fender;
+import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Internals;
+import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Wheels;
+import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Windows;
+
 /**
  * An abstraction of car components.
  *
  * @author Eugenio Lentini
  */
 public abstract class AbstractCarWithComponents {
-    private String fender;
-    private String chassis;
-    private String window;
-    private String doors;
-    private String wheels;
-    private String internals;
+
+    /**
+     * Fender instance.
+     */
+    private Fender fender;
+
+    /**
+     * Chassis instance.
+     */
+    private Chassis chassis;
+
+    /**
+     * Windows instance.
+     */
+    private Windows window;
+
+    /**
+     * Doors instance.
+     */
+    private Doors doors;
+
+    /**
+     * Wheels instance.
+     */
+    private Wheels wheels;
+
+    /**
+     * Internals instance.
+     */
+    private Internals internals;
 
     /**
      * True if the car has been assembled.
@@ -58,27 +89,55 @@ public abstract class AbstractCarWithComponents {
      */
     public abstract void getComponents();
 
-    public void setFender(String fender) {
-        this.fender = fender;
+    /**
+     * Set the fender for the car.
+     *
+     * @param carFender to be set
+     */
+    public final void setFender(final Fender carFender) {
+        this.fender = carFender;
     }
 
-    public void setChassis(String chassis) {
-        this.chassis = chassis;
+    /**
+     * Set the chassis for the car.
+     *
+     * @param carChassis to be set
+     */
+    public final void setChassis(final Chassis carChassis) {
+        this.chassis = carChassis;
     }
 
-    public void setWindow(String window) {
-        this.window = window;
+    /**
+     * @param carWindows to be set
+     */
+    public final void setWindow(final Windows carWindows) {
+        this.window = carWindows;
     }
 
-    public void setDoors(String doors) {
-        this.doors = doors;
+    /**
+     * Set the doors for the car.
+     *
+     * @param carDoors to be set
+     */
+    public final void setDoors(final Doors carDoors) {
+        this.doors = carDoors;
     }
 
-    public void setWheels(String wheels) {
-        this.wheels = wheels;
+    /**
+     * Set the wheels for the car.
+     *
+     * @param carWheels to be set
+     */
+    public final void setWheels(final Wheels carWheels) {
+        this.wheels = carWheels;
     }
 
-    public void setInternals(String internals) {
-        this.internals = internals;
+    /**
+     * Set the internals for the car.
+     *
+     * @param carInternals to be set
+     */
+    public final void setInternals(final Internals carInternals) {
+        this.internals = carInternals;
     }
 }
