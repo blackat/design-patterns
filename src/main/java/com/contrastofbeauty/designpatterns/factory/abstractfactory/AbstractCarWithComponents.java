@@ -1,4 +1,4 @@
-package com.contrastofbeauty.designpatterns.factory.domain;
+package com.contrastofbeauty.designpatterns.factory.abstractfactory;
 
 /**
  * An abstraction of car components.

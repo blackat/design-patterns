@@ -5,34 +5,34 @@ package com.contrastofbeauty.designpatterns.factory.abstractfactory;
  *
  * @author Eugenio Lentini
  */
-public class ClassAComponentsFactory implements CarComponentsFactory{
+public class FamilyCarComponentsFactory implements CarComponentsFactory{
     @Override
-    public String createFender() {
+    public final String createFender() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public String createChassis() {
+    public final String createChassis() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public String createWindow() {
+    public final String createWindow() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public String createDoors() {
+    public final String createDoors() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public String createWheels() {
+    public final String createWheels() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public String createInternals() {
+    public final String createInternals() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

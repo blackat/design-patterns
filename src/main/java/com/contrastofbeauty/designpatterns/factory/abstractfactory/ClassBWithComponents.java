@@ -5,7 +5,7 @@ package com.contrastofbeauty.designpatterns.factory.abstractfactory;
  *
  * @author Eugenio Lentini
  */
-public class ClassAWithComponents extends AbstractCarWithComponents {
+public class ClassBWithComponents extends AbstractCarWithComponents {
 
     /**
      * Components factory.
@@ -17,7 +17,7 @@ public class ClassAWithComponents extends AbstractCarWithComponents {
      *
      * @param factory factory to get the car components.
      */
-    public ClassAWithComponents(final CarComponentsFactory factory) {
+    public ClassBWithComponents(final CarComponentsFactory factory) {
         carComponentsFactory = factory;
     }
 

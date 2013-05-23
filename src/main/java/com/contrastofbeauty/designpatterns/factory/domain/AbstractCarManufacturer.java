@@ -1,7 +1,5 @@
 package com.contrastofbeauty.designpatterns.factory.domain;
 
-import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
-import com.contrastofbeauty.designpatterns.factory.simplefactory.CarFactory;
 import org.apache.commons.lang.Validate;
 
 /**
@@ -18,7 +16,13 @@ public abstract class AbstractCarManufacturer {
 
     }
 
-    public AbstractCar buildCar(String model) {
+    /**
+     * Follows different phases to build a car.
+     *
+     * @param model of the car to build
+     * @return a built car
+     */
+    public final AbstractCar buildCar(final String model) {
         AbstractCar car = createCar(model);
 
         Validate.notNull(car, "Model " + model + " is not available for the build.");
@@ -31,5 +35,11 @@ public abstract class AbstractCarManufacturer {
         return car;
     }
 
-    protected abstract AbstractCar createCar(String model);
+    /**
+     * Creates an instance of the car.
+     *
+     * @param model of the car to set up
+     * @return a set up instance of a car
+     */
+    protected abstract AbstractCar createCar(final String model);
 }

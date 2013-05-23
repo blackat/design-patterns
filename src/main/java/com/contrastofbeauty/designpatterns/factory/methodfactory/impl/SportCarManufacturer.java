@@ -3,14 +3,13 @@ package com.contrastofbeauty.designpatterns.factory.methodfactory.impl;
 import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
 import com.contrastofbeauty.designpatterns.factory.domain.ClassA;
 import com.contrastofbeauty.designpatterns.factory.domain.ClassB;
-import com.contrastofbeauty.designpatterns.factory.domain.AbstractCarManufacturer;
 
 /**
  * A sport car manufacturer.
  *
  * @author Eugenio Lentini
  */
-public class SportCarManufacturer extends AbstractCarManufacturer {
+public class SportCarManufacturer extends com.contrastofbeauty.designpatterns.factory.domain.AbstractCarComponentsManufacturer {
 
     public static final String SLK_CLASS = "slk-class";
     public static final String SLR_CLASS = "slr-class";

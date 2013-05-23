@@ -1,7 +1,6 @@
 package com.contrastofbeauty.designpatterns.factory.methodfactory;
 
 import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
-import com.contrastofbeauty.designpatterns.factory.domain.AbstractCarManufacturer;
 import com.contrastofbeauty.designpatterns.factory.methodfactory.impl.CarManufacturer;
 import com.contrastofbeauty.designpatterns.factory.methodfactory.impl.FamilyCarManufacturer;
 import com.contrastofbeauty.designpatterns.factory.methodfactory.impl.SportCarManufacturer;
@@ -19,9 +18,9 @@ import static org.junit.Assert.assertTrue;
  */
 public class CarManufacturerTest {
 
-    private AbstractCarManufacturer carManufacturer;
-    private AbstractCarManufacturer sportCarManufacturer;
-    private AbstractCarManufacturer familyCarManufacturer;
+    private com.contrastofbeauty.designpatterns.factory.domain.AbstractCarComponentsManufacturer carManufacturer;
+    private com.contrastofbeauty.designpatterns.factory.domain.AbstractCarComponentsManufacturer sportCarManufacturer;
+    private com.contrastofbeauty.designpatterns.factory.domain.AbstractCarComponentsManufacturer familyCarManufacturer;
 
     @Before
     public void setUp() {

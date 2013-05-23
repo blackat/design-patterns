@@ -3,14 +3,13 @@ package com.contrastofbeauty.designpatterns.factory.methodfactory.impl;
 import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
 import com.contrastofbeauty.designpatterns.factory.domain.ClassA;
 import com.contrastofbeauty.designpatterns.factory.domain.ClassB;
-import com.contrastofbeauty.designpatterns.factory.domain.AbstractCarManufacturer;
 
 /**
  * A family car manufacturer.
  *
  * @author Eugenio Lentini
  */
-public class FamilyCarManufacturer extends AbstractCarManufacturer {
+public class FamilyCarManufacturer extends com.contrastofbeauty.designpatterns.factory.domain.AbstractCarComponentsManufacturer {
 
     public static final String C_CLASS = "c-class";
     public static final String E_CLASS = "e-class";
