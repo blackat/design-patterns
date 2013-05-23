@@ -67,27 +67,27 @@ public abstract class AbstractCarWithComponents {
     /**
      * Assembles different parts of the car.
      */
-    public abstract void assemble();
+    abstract void assemble();
 
     /**
      * Paints the car.
      */
-    public abstract void paint();
+    abstract void paint();
 
     /**
      * Mounts the wheels.
      */
-    public abstract void mountWheels();
+    abstract void mountWheels();
 
     /**
      * Does a test drive.
      */
-    public abstract void test();
+    abstract void test();
 
     /**
      * Gets the components before entering in the different phases.
      */
-    public abstract void getComponents();
+    abstract void getComponents();
 
     /**
      * Set the fender for the car.
