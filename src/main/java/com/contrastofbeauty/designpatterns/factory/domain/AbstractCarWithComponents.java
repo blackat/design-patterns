@@ -1,4 +1,4 @@
-package com.contrastofbeauty.designpatterns.factory.abstractfactory;
+package com.contrastofbeauty.designpatterns.factory.domain;
 
 import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Chassis;
 import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Doors;
@@ -12,8 +12,7 @@ import com.contrastofbeauty.designpatterns.factory.abstractfactory.domain.Window
  *
  * @author Eugenio Lentini
  */
-public abstract class AbstractCarWithComponents {
-
+public abstract class AbstractCarWithComponents extends AbstractCar {
     /**
      * Fender instance.
      */
@@ -44,45 +43,6 @@ public abstract class AbstractCarWithComponents {
      */
     private Internals internals;
 
-    /**
-     * True if the car has been assembled.
-     */
-    private boolean assembled;
-
-    /**
-     * True if the car has been painted.
-     */
-    private boolean painted;
-
-    /**
-     * True if the wheels have been mounted.
-     */
-    private boolean wheelsMounted;
-
-    /**
-     * True if the car has been tested.
-     */
-    private boolean tested;
-
-    /**
-     * Assembles different parts of the car.
-     */
-    abstract void assemble();
-
-    /**
-     * Paints the car.
-     */
-    abstract void paint();
-
-    /**
-     * Mounts the wheels.
-     */
-    abstract void mountWheels();
-
-    /**
-     * Does a test drive.
-     */
-    abstract void test();
 
     /**
      * Gets the components before entering in the different phases.

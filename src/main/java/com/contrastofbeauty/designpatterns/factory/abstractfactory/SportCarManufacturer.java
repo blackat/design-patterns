@@ -1,5 +1,8 @@
 package com.contrastofbeauty.designpatterns.factory.abstractfactory;
 
+import com.contrastofbeauty.designpatterns.factory.domain.AbstractCarComponentsManufacturer;
+import com.contrastofbeauty.designpatterns.factory.domain.AbstractCarWithComponents;
+
 /**
  * A manufacturer for sport cars.
  *

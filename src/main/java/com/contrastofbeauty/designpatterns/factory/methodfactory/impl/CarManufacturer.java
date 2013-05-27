@@ -1,6 +1,7 @@
 package com.contrastofbeauty.designpatterns.factory.methodfactory.impl;
 
 import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
+import com.contrastofbeauty.designpatterns.factory.methodfactory.AbstractCarManufacturer;
 import com.contrastofbeauty.designpatterns.factory.domain.ClassA;
 import com.contrastofbeauty.designpatterns.factory.domain.ClassB;
 
@@ -9,13 +10,14 @@ import com.contrastofbeauty.designpatterns.factory.domain.ClassB;
  *
  * @author Eugenio Lentini
  */
-public class CarManufacturer extends com.contrastofbeauty.designpatterns.factory.domain.AbstractCarComponentsManufacturer {
+public class CarManufacturer extends AbstractCarManufacturer {
 
     public static final String A_CLASS = "a-class";
+
     public static final String B_CLASS = "b-class";
 
     @Override
-    public AbstractCar createCar(String model) {
+    public AbstractCar createCar(final String model) {
         if (model.equalsIgnoreCase(A_CLASS)) {
             return new ClassA();
         } else if (model.equalsIgnoreCase(B_CLASS)) {

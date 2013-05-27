@@ -1,5 +1,7 @@
 package com.contrastofbeauty.designpatterns.factory.abstractfactory;
 
+import com.contrastofbeauty.designpatterns.factory.domain.AbstractCarWithComponents;
+
 /**
  * A class A model characterized by having components.
  *

@@ -1,4 +1,4 @@
-package com.contrastofbeauty.designpatterns.factory.abstractfactory;
+package com.contrastofbeauty.designpatterns.factory.domain;
 
 import org.apache.commons.lang.Validate;
 

@@ -51,7 +51,7 @@ public abstract class AbstractCar {
      * Return assembled value.
      * @return true if assembled.
      */
-    public boolean isAssembled() {
+    public final boolean isAssembled() {
         return assembled;
     }
 
@@ -59,7 +59,7 @@ public abstract class AbstractCar {
      * Return painted value.
      * @return true if painted.
      */
-    public boolean isPainted() {
+    public final boolean isPainted() {
         return painted;
     }
 
@@ -67,7 +67,7 @@ public abstract class AbstractCar {
      * Return wheelMounted value.
      * @return true if wheels have been mounted.
      */
-    public boolean isWheelsMounted() {
+    public final boolean isWheelsMounted() {
         return wheelsMounted;
     }
 
@@ -75,7 +75,7 @@ public abstract class AbstractCar {
      * Return tested value.
      * @return true if tested.
      */
-    public boolean isTested() {
+    public final boolean isTested() {
         return tested;
     }
 
@@ -83,7 +83,7 @@ public abstract class AbstractCar {
      * Sets the value of assembled.
      * @param assembled
      */
-    public void setAssembled(boolean assembled) {
+    public final void setAssembled(final boolean assembled) {
         this.assembled = assembled;
     }
 
@@ -91,7 +91,7 @@ public abstract class AbstractCar {
      * Sets the value of painted.
      * @param painted
      */
-    public void setPainted(boolean painted) {
+    public final void setPainted(final boolean painted) {
         this.painted = painted;
     }
 
@@ -99,7 +99,7 @@ public abstract class AbstractCar {
      * Sets the value of wheelsMounted.
      * @param wheelsMounted
      */
-    public void setWheelsMounted(boolean wheelsMounted) {
+    public final void setWheelsMounted(final boolean wheelsMounted) {
         this.wheelsMounted = wheelsMounted;
     }
 
@@ -107,7 +107,7 @@ public abstract class AbstractCar {
      * Sets the value of tested.
      * @param tested
      */
-    public void setTested(boolean tested) {
+    public final void setTested(final boolean tested) {
         this.tested = tested;
     }
 }

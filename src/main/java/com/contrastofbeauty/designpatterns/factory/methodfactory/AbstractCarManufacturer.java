@@ -1,5 +1,6 @@
-package com.contrastofbeauty.designpatterns.factory.domain;
+package com.contrastofbeauty.designpatterns.factory.methodfactory;
 
+import com.contrastofbeauty.designpatterns.factory.domain.AbstractCar;
 import org.apache.commons.lang.Validate;
 
 /**
